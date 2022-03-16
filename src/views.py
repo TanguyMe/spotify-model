@@ -3,7 +3,7 @@
 from src import app
 # from pydantic import BaseModel
 
-from prediction import prediction, cv_silhouette_scorer
+from src.prediction import prediction, cv_silhouette_scorer
 from flask import Flask, request, jsonify, Response
 import json
 
