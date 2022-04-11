@@ -4,6 +4,9 @@
 
 name: Build and deploy Python app to Azure Web App - Wilts-model
 
+env:
+  WORKING_DIRECTORY: 'src'
+
 on:
   push:
     branches:
