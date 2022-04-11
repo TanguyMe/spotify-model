@@ -4,9 +4,6 @@
 
 name: Build and deploy Python app to Azure Web App - Wilts-model
 
-env:
-  WORKING_DIRECTORY: 'src'
-
 on:
   push:
     branches:
@@ -63,4 +60,4 @@ jobs:
         with:
           app-name: 'Wilts-model'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DC1536041FE247629511D37A738747FA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CCB1FBEB46C4B60A462E15798703A95 }}
