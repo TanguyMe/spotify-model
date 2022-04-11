@@ -30,7 +30,7 @@ import numpy as np
 
 @app.route("/")
 async def root():
-    return "Hello World"
+    return {"message": "Hello World"}
 
 
 @app.route("/prediction")
