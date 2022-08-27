@@ -38,6 +38,4 @@ async def prediction_request():
     """Request that gives the predicted classes for a json containing the songs information"""
     audio_features = request.get_json()
     predictions = prediction(audio_features).tolist()
-    print(predictions)
-    print(json.dumps(predictions))
     return Response(json.dumps(predictions))
